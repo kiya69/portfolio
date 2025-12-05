@@ -7,12 +7,17 @@ paginate: 6
 markdown: kramdown
 highlighter: rouge
 permalink: /:title
+baseurl: /portfolio
 plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: 'Portfolio of Wan-Ting Chang'
 description: 'a minimalist Jekyll site for running a personal website,blog and portfolio'
 author: 'Wan-Ting Chang'
+
+# GitHub Pages URL configuration
+github:
+    url: https://kiya69.github.io/portfolio
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
