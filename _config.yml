@@ -12,7 +12,7 @@ plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: 'Portfolio of Wan-Ting Chang'
-description: 'a minimalist Jekyll site for running a personal website,blog and portfolio'
+description: 'a minimalist Jekyll site for running a personal website, blog and portfolio'
 author: 'Wan-Ting Chang'
 
 # GitHub Pages URL configuration
