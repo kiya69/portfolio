@@ -8,8 +8,7 @@
         {% else %}
           <li>
             <h3>
-              {% assign site_url = site.url | default: site.github.url %}
-              <a href="{{ site_url }}{{ site.baseurl }}{{ mypost.url }}">
+              <a href="{{ site.github.url }}{{ site.baseurl }}{{ mypost.url }}">
                 <div class="related-thumbnail">
                   {% if mypost.image %}
                     <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ mypost.image }}">

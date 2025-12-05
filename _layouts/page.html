@@ -8,8 +8,7 @@ layout: default
   </h1>
   {% if page.image %}
     <div class="featured-image">
-      {% assign site_url = site.url | default: site.github.url %}
-      <img src="{{ site_url }}{{ site.baseurl }}/assets/img/{{ page.image }}">
+      <img src="{{ site.github.url }}{{ site.baseurl }}/assets/img/{{ page.image }}">
     </div>
   {% endif %}
   <article>
