@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Nightingale's Coxcomb Diagram - 3D Visualization</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #ffffff;
+            color: #333333;
+            overflow: hidden;
+        }
+
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        #title {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        #title h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #ff6b6b;
+        }
+
+        #title p {
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+
+        input[type="range"] {
+            width: 200px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #ff5252;
+        }
+
+        button.active {
+            background: #4caf50;
+        }
+
+        #info-panel {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 300px;
+            display: none;
+            color: #FFFFFF;
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2em;
+            color: #ff6b6b;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="loading">Loading Florence Nightingale Data...</div>
+        
+        <div id="title">
+            <h1>Florence Nightingale's Coxcomb Diagram Redesign</h1>
+            <p>3D Interactive Visualization</p>
+        </div>
+
+        <div id="controls">
+            <div class="control-group">
+                <label>Rotation Speed</label>
+                <input type="range" id="rotationSpeed" min="0" max="0.02" step="0.001" value="0.005">
+            </div>
+            
+            <div class="control-group">
+                <label>Zoom Level</label>
+                <input type="range" id="zoomLevel" min="0.5" max="3" step="0.1" value="1">
+            </div>
+
+            <div class="control-group">
+                <button id="toggleRotation">Start Rotation</button>
+                <button id="resetView">Reset View</button>
+                <button id="toggleWireframe">Wireframe</button>
+            </div>
+
+            <div class="control-group">
+                <label>Controls:</label>
+                <div style="font-size: 0.8em; color: #fff; margin-top: 5px;">
+                    <div>• Left drag: Rotate</div>
+                    <div>• Right drag: Pan</div>
+                    <div>• Wheel: Zoom</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Death Type Filter:</label>
+                <button id="filterAll" class="active">All</button>
+                <button id="filterDisease">Disease</button>
+                <button id="filterWounds">Wounds</button>
+                <button id="filterOther">Other</button>
+                <button id="filterTotal">Total</button>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #20b2aa;"></div>
+                <span>Disease</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #dc143c;"></div>
+                <span>Wounds</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #2c2c2c;"></div>
+                <span>Other</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffa500;"></div>
+                <span>Total</span>
+            </div>
+        </div>
+
+        <div id="info-panel">
+            <h3 id="info-title">Hover over bars for details</h3>
+            <p id="info-content">Move your mouse over the 3D bars to see detailed information about each data point.</p>
+        </div>
+
+        <div id="canvas-container"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FontLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

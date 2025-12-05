@@ -3,7 +3,8 @@ layout: default
 title: Home
 ---
 
-{% for post in paginator.posts %}
+{% assign sorted_posts = paginator.posts | reverse %}
+{% for post in sorted_posts %}
   {% include featured-post.html %}
 {% endfor %}
 

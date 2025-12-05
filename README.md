@@ -230,7 +230,7 @@ This theme is completely free and open source software. You may use it however y
 
 ### Creator
 
-#### Paul Le
+#### Wan-Ting Chang
 
 * [www.lenpaul.com](http://lenpaul.com)
 
