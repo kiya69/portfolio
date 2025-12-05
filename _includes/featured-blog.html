@@ -1,7 +1,10 @@
 <article>
+
   <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
     <div class="featured-post" {% if post.image %}style="background-image:url({{ site.url }}{{ site.baseurl }}/assets/img/{{ post.image }})"{% endif %}>
       <h2><span>{{ post.title }}</span></h2>
     </div>
   </a>
+  <p><span>{{ post.excerpt }}</span></p>
+
 </article>

@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog
+---
+
+{% assign blog_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% assign is_blog = false %}
+  {% for category in post.categories %}
+    {% if category == 'blog' %}
+      {% assign is_blog = true %}
+    {% endif %}
+  {% endfor %}
+  {% if is_blog %}
+    {% assign blog_posts = blog_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_posts = blog_posts %}
+
+<!-- {% for post in sorted_posts %}
+  {% include featured-blog.html %}
+{% endfor %} -->
+<div class="post-content">
+  <h1>
+    Blog
+  </h1>
+</div>
+{% for post in sorted_posts %}
+                <div class="post-content" style="padding-bottom: 20px; border-bottom: 2px solid #999;">
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                    <div class="post-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                        {% if post.tags %}
+                            <div class="post-tags">
+                                {% for tag in post.tags %}
+                                    <span class="tag">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                      <article>
+                        {{ post.content }}
+                      </article>
+                </div>
+            {% endfor %}

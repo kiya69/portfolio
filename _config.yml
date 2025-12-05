@@ -15,7 +15,12 @@ title: 'Portfolio of Wan-Ting Chang'
 description: 'a minimalist Jekyll site for running a personal website,blog and portfolio'
 author: 'Wan-Ting Chang'
 
-# GitHub Pages URL configuration
+# URL configuration
+# For local development, set to: http://localhost:4000
+# For production, GitHub Pages will override this automatically
+url: http://localhost:4000
+
+# GitHub Pages URL configuration (for production)
 github:
     url: https://kiya69.github.io/portfolio
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
