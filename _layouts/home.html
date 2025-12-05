@@ -5,7 +5,9 @@ title: Home
 
 {% assign sorted_posts = paginator.posts | reverse %}
 {% for post in sorted_posts %}
-  {% include featured-post.html %}
+  {% unless post.categories contains 'blog' %}
+    {% include featured-post.html %}
+  {% endunless %}
 {% endfor %}
 
 <!-- Pagination links -->
