@@ -4,7 +4,7 @@ title: Notes on Data Visualizations
 date: 2025-09-17
 author: 'Wan-Ting Chang'
 categories: [blog]
-tags: [beginner, Ethical ai]
+tags: [data visualization]
 excerpt: Today we discuss the 6 initiatives for 5 principles in Ethical AI. Our professor points out that all these initiatives are from the western countries but I wonder...
 ---
 
