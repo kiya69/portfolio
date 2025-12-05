@@ -40,4 +40,4 @@ This project demonstrates that the attempts to undermine Taiwan's security are f
 ## Links
 
 -   **Interactive Version:** <a href="https://kiya69.github.io/mjtads/assets/assignments/visualization_storytelling/assignment3/treemap.html" target="_blank">View the interactive infographic</a>
--   **PDF Version:** [Download the infographic PDF]({{ site.github.url }}/assets/doc/infographic.pdf)
+-   **PDF Version:** [Download the infographic PDF]({{ '/assets/doc/' | relative_url }}infographic.pdf)

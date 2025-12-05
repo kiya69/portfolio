@@ -28,27 +28,27 @@ I think the audience for this project is, of course, Kiya and Mike, and the mind
 
 ## Iteration 1
 
-![A family with luggage and airplane]({{ site.github.url }}/assets/img/image1.jpeg)
+![A family with luggage and airplane]({{ '/assets/img/image1.jpeg' | relative_url }})
 
 **Pic 1:** ChatGPT helped me generate a picture of a family of 4 moving abroad. Caption: Kiya and Mike's family of 4 is moving to Canada.
 
-![A drawing of a family and a person with a child]({{ site.github.url }}/assets/img/image2.jpeg)
+![A drawing of a family and a person with a child]({{ '/assets/img/image2.jpeg' | relative_url }})
 
 **Pic 2:** Soon, they found out they spent an unexpected amount of money to settle down, so they considered selling the apartment in Berlin
 
-![A drawing of two people sitting at a computer]({{ site.github.url }}/assets/img/image3.png)
+![A drawing of two people sitting at a computer]({{ '/assets/img/image3.png' | relative_url }})
 
 **Pic 3:** They began to check the prices in both places.
 
-![A graph showing a line graph]({{ site.github.url }}/assets/img/image4.png)
+![A graph showing a line graph]({{ '/assets/img/image4.png' | relative_url }})
 
 **Pic 4:** A graph showing what are the prices they found out. First, we show the property price.
 
-![A graph on a piece of paper]({{ site.github.url }}/assets/img/image5.jpeg)
+![A graph on a piece of paper]({{ '/assets/img/image5.jpeg' | relative_url }})
 
 **Pic 5:** Show the rental price in Berlin & Oshawa. Here, I got the inspiration from Mona Chalabi to use real objects to represent data. I tried to draw stacks of cash to represent how much weight it has in these numbers.
 
-![A drawing of two people sitting at a table]({{ site.github.url }}/assets/img/image6.png)
+![A drawing of two people sitting at a table]({{ '/assets/img/image6.png' | relative_url }})
 
 **Pic 6:** Conclusion: They decided to wait until 2028, which is 10 years after they bought the apartment, and see how things go. Because maybe they have to move back, or the children will move to Berlin when they grow up.
 
@@ -56,15 +56,15 @@ I think the audience for this project is, of course, Kiya and Mike, and the mind
 
 I would like to consider the potential risks here. There is a war going on in Europe, and it is unclear whether it will soon escalate across the continent. If it does, the property price might go down, so I'd like to also see the historical trend for the property that correlates to wars. So I researched a couple of analyses of the property price trend during World War 2 and even World War 1. The graph will be added after the price charts for both places. So Pic 1 -- Pic 5 will be the same as iteration 1. The new data will be inserted after Pic 5:
 
-![A graph showing the growth of the top 10 and bottom of the german stock market]({{ site.github.url }}/assets/img/image7.png)
+![A graph showing the growth of the top 10 and bottom of the german stock market]({{ '/assets/img/image7.png' | relative_url }})
 
 **Pic 6:** Historical trend for Berlin property prices during World War 2. Note: I couldn't find an exact graph representing property prices in Berlin, but I found a graph about the wealth share in Germany. It is obvious that during WWI and WWII, people's wealth decreased drastically.[^1]
 
-![A screenshot of a graph]({{ site.github.url }}/assets/img/image8.png)
+![A screenshot of a graph]({{ '/assets/img/image8.png' | relative_url }})
 
 **Pic 7:** Analysis of whether the war will break out in Germany. For this part, it was very difficult to decide what data and what graph I wanted to use. Because most of the graph I can find are biased. At the end, I found out this pool[^2] was done by Global News, and found it might be more neutral to present.
 
-![A piece of lined paper with a black text]({{ site.github.url }}/assets/img/image9.png)
+![A piece of lined paper with a black text]({{ '/assets/img/image9.png' | relative_url }})
 
 **Pic 8:** Conclusion: most evidence shows that it won't break out soon, so the couple could wait until 2028.
 
@@ -76,11 +76,11 @@ I'd suggest checking the Miro board to see all the details.
 
 All the data I gathered during my research:
 
-![A screenshot of a whiteboard with a map and notes]({{ site.github.url }}/assets/img/image10.png)
+![A screenshot of a whiteboard with a map and notes]({{ '/assets/img/image10.png' | relative_url }})
 
 And here is the final storyboard:
 
-[![A diagram of a war]({{ site.github.url }}/assets/img/image11.png)](https://miro.com/app/board/uXjVJ_V7Cx4=/?share_link_id=625196168094)
+[![A diagram of a war]({{ '/assets/img/image11.png' | relative_url }})](https://miro.com/app/board/uXjVJ_V7Cx4=/?share_link_id=625196168094)
 
 ## Conclusion
 
