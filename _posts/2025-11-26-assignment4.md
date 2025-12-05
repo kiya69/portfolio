@@ -9,17 +9,6 @@ image: assignment4_cover.png
 
 # To What Extent Is AI Affecting Affordability For Young Professionals In Oshawa?
 
-## Group Members
-
--   Wan-Ting Chang
--   Suneera Shaik
--   Le Thu Ngan Nguyen
--   Ei Myat Mon
--   Hemaswi Gorrela
--   Sara Al Aghbar
-
----
-
 ## Agenda
 
 -   Method and hand drawn sketch
@@ -28,17 +17,6 @@ image: assignment4_cover.png
 -   Personas
 -   Tools and techniques used
 -   Color palette & font choice
-
----
-
-## Who Did What?
-
--   **Brainstorming** - All members
--   **Story Flow** - Sara, Amie, Hemaswi
--   **Data Gathering & Analysis** - Suneera, Hemaswi
--   **Persona Development** - All members
--   **Data Design** - Sara, Hemaswi
--   **Data Story** - Hemaswi, Sara
 
 ---
 

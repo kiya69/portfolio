@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes on today's Ethic in AI class
+title: Notes on Data Visualizations
 date: 2025-09-17
 author: 'Wan-Ting Chang'
 categories: [blog]
