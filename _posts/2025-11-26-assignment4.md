@@ -77,4 +77,4 @@ _[Tools and techniques would be listed here]_
 
 ### Explore Here!
 
-[View the interactive scrolly telling data story](https://www.canva.com/design/DAG5woU3xpc/N6MaUCN9fQQzGBIDVxjF7g/edit?utm_content=DAG5woU3xpc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+<a href="https://www.canva.com/design/DAG5woU3xpc/N6MaUCN9fQQzGBIDVxjF7g/edit?utm_content=DAG5woU3xpc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">View the interactive scrolly telling data story</a>
