@@ -13,4 +13,4 @@ You are welcome to view this work in progress, but be advised that you may encou
 
 <a href="https://kiya69.github.io/data-story/" target="_blank">View the interactive data story</a>
 
-In this scrollytelling, You can also click on the 3 personas' profile picture to pull up their introduction and data.
+In this scrollytelling, you can also click on the 3 personas' profile picture to pull up their introduction and data.
